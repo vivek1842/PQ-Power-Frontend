@@ -1,0 +1,179 @@
+
+     body {
+         font-family: 'Arial', sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #f8f9fa;
+     }
+
+     header {
+         background-color: #343a40;
+         color: #fff;
+         text-align: center;
+         padding: 20px;
+     }
+
+     nav {
+         background-color: #6c757d;
+         position: fixed;
+         width: 100%;
+         z-index: 1000;
+     }
+
+     nav a {
+         color: #fff;
+         padding: 10px;
+         text-decoration: none;
+         font-weight: bold;
+     }
+
+     section {
+         padding: 80px 20px 20px; /* Adjust padding as needed */
+     }
+
+     .container {
+         margin-top: 20px;
+     }
+
+     footer {
+         background-color: #343a40;
+         color: #fff;
+         text-align: center;
+         padding: 10px;
+         width: 100%;
+         margin-top: 20px;
+     }
+
+     /* Added styles for the vertical table */
+     .vertical-table {
+         display: flex;
+         justify-content: space-between;
+         align-items: flex-start;
+     }
+
+     .vertical-table .column {
+         flex: 1;
+         margin-right: 20px; /* Adjust margin as needed */
+     }
+
+     .vertical-table h2 {
+         text-align: center;
+     }
+
+     .vertical-table table {
+         width: 100%;
+     }
+
+     .vertical-table th,
+     .vertical-table td {
+         padding: 10px;
+         border: 1px solid #ddd;
+         text-align: left;
+         white-space: nowrap;
+     }
+
+     .vertical-table th {
+         background-color: #343a40;
+         color: #fff;
+         text-align: center; /* Center the text */
+     }
+
+     .vertical-table td:nth-child(2),
+     .vertical-table td:nth-child(3) {
+         border-left: none;
+     }
+
+     .vertical-table h3 {
+         margin-bottom: 0;
+     }
+     #notationBox {
+        background-color: #f0f0f0;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        left: 0; /* Updated from right: 0 */
+}
+/*single css*/
+.trafficLight {
+        background-color: black;
+        width: 50px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 92px 2px;
+        border-radius: 10px;
+        
+      }
+      .trafficLight span {
+        width: 151px;
+        height: 142px;
+        border-radius: 99%;
+        background: #808080;
+        background-color: rgba(128, 128, 128, 0);
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        /* animation: red 5s linear infinite */
+        /* animation-fill-mode: forwards; */
+      }
+      .red {
+        animation-name: red;
+      }
+      .yellow {
+        animation-name: yellow;
+      }
+      .green {
+        animation-name: green;
+      }
+
+      @keyframes red {
+        0%,
+        33% {
+          background-color: red;
+        }
+        34%,
+        100% {
+          background-color: gray;
+        }
+      }
+
+      @keyframes yellow {
+        0%,
+        33% {
+          background-color: gray;
+        }
+        34%,
+        66% {
+          background-color: yellow;
+        }
+        67%,
+        100% {
+          background-color: gray;
+        }
+      }
+
+      @keyframes green {
+        0%,
+        66% {
+          background-color: gray;
+        }
+        67%,
+        100% {
+          background-color: green;
+        }
+      }
+      .buttons{
+        display: flex;
+        justify-content: center;
+        margin-left: 200px;
+      }
+      .buttons button{
+        margin-left: 20px;
+        padding: 8px 20px;
+        border-radius: 10px;
+      }
+ 

@@ -1,0 +1,180 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/toorshia/justgage@1.4.0/dist/justgage.min.css">
+<header class="d-flex align-items-center justify-content-center">
+    
+    <img src="assets/logo.jpeg" alt="logo" class="img-fluid1" height="116px">
+    <h1>Simplified Power Quality Index</h1>
+  </header>
+ <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" ></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" routerLink="['']"  ><i class="fas fa-wrench"></i> SPQI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page_3_voltage.html"><i class="fas fa-bolt"></i> Voltage & Current</a></li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Continuous Type
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <!-- Add sub-dropdown here -->
+                                    <a class="dropdown-item dropdown-toggle" href="powerfactor.html">Power Factor</a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <!-- Add sub-dropdown here -->
+                                    <a class="dropdown-item dropdown-toggle" href="harmonics.html">Harmonics</a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <!-- Add sub-dropdown here -->
+                                    <a class="dropdown-item dropdown-toggle" href="frequency.html">Frequency</a>
+                                </li>
+                                
+                                
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Event Type
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <!-- Add sub-dropdown here -->
+                                    <a class="dropdown-item dropdown-toggle" href="transient.html">Transient</a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <!-- Add sub-dropdown here -->
+                                    <a class="dropdown-item dropdown-toggle" href="sagswell.html">Sag/Swell</a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <!-- Add sub-dropdown here -->
+                                    <a class="dropdown-item dropdown-toggle" href="underlower.html">Under Voltage/ Lower Voltage</a>
+                                </li>
+                                
+                                
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="page_1_Analytics.html"><i class="fas fa-chart-line"></i> Analytics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    <section id="portfolio" class="py-5" style="background: linear-gradient(177deg, #2b83d5, rgb(252,249,249) 50%, white);">
+        <div class="intro">
+           </div>
+        <div class="container">
+            <div class="filtr-controls text-center lead text-uppercase mb-4"></div>
+            <div class="row filtr-container">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 filtr-item" data-category="1,2">
+                    <div style="background: url(&quot;assets/img/pngwing.com.png&quot;) center / cover;width: 433px;"><div class="trafficLight" style="height: 633px; width: 439px; background: none;padding: 66px;">
+                        <span id="red" class="red"></span>
+                        <span id="yellow" class="yellow"></span>
+                        <span id="green" class="green"></span>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 filtr-item" data-category="2,3">
+                    <div style="padding-top: 120px;background: var(--bs-red);margin-top: 98px;padding-bottom: 0px;margin-bottom: 45px;height: 108px;width: 404px;border-style: outset;border-radius: 50px;">
+                        <h1 id="worst" style="padding-top: 0px;margin-top: -77px;">Critical&nbsp; &nbsp;%<br></h1>
+                    </div>
+                    <div style="padding-bottom: 24px;margin-bottom: -23px;margin-top: 29px;padding-top: 69px;background: var(--bs-yellow);height: 108px;width: 404px;border-radius: 50px;">
+                        <h1 id="bad" style="margin-top: -33px;">Bad&nbsp; &nbsp; &nbsp; &nbsp; %<br></h1>
+                    </div>
+                    <div style="padding-bottom: 24px;margin-bottom: -23px;padding-top: 69px;background: var(--bs-green);margin-top: 90px;height: 108px;width: 404px;border-radius: 50px;">
+                        <h1 id="good" style="margin-top: -36px;">Good&nbsp; &nbsp; &nbsp; &nbsp; %<br></h1>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button onclick="startFunction()" class="btn btn-primary">Start</button>
+                    <button onclick="nextFunction()" class="btn btn-secondary">Next</button>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 filtr-item" data-category="3,1">
+                    <h1>Power Quality Indicator<br></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <footer>
+        <p>&copy; 2024 Power Quality Assessment. All rights reserved.</p>
+    </footer>
+
+    <script>
+        data = [1,2,3,4,5,6];
+        i=0;
+        function startFunction() {
+            var element = document.getElementById("red");
+            var element2 = document.getElementById("yellow");
+            var element3 = document.getElementById("green");
+            element.classList.remove("red")
+            element2.classList.remove("yellow")
+            element3.classList.remove("green")
+            var elem1 = document.getElementById("good").innerHTML = "Good 80%"
+            element3.classList.add("green")
+        }
+        function nextFunction() {
+            i++;
+            var element = document.getElementById("red");
+            var element2 = document.getElementById("yellow");
+            var element3 = document.getElementById("green");
+            element.classList.remove("red")
+            element2.classList.remove("yellow")
+            element3.classList.remove("green")
+
+            if(data[i]==2) {
+                var elem1 = document.getElementById("good").innerHTML = "Good %"
+                var elem2 = document.getElementById("bad").innerHTML = "Bad 40%"
+                var elem3 = document.getElementById("worst").innerHTML = "Critical %"
+                element2.classList.add("yellow")
+            } else if(data[i]==3) {
+                var elem1 = document.getElementById("good").innerHTML = "Good %"
+                var elem2 = document.getElementById("bad").innerHTML = "Bad %"
+                var elem3 = document.getElementById("worst").innerHTML = "Critical 10%"
+                element.classList.add("red")
+            } else if(data[i]==4) {
+                var elem1 = document.getElementById("good").innerHTML = "Good 87%"
+                var elem2 = document.getElementById("bad").innerHTML = "Bad %"
+                var elem3 = document.getElementById("worst").innerHTML = "Critical %"
+                element3.classList.add("green")
+            } else if(data[i]==5) {
+                var elem1 = document.getElementById("good").innerHTML = "Good %"
+                var elem2 = document.getElementById("bad").innerHTML = "Bad 34%"
+                var elem3 = document.getElementById("worst").innerHTML = "Critical %"
+                element2.classList.add("yellow")
+            } else if(data[i]==6) {
+                var elem1 = document.getElementById("good").innerHTML = "Good 92%"
+                var elem2 = document.getElementById("bad").innerHTML = "Bad %"
+                var elem3 = document.getElementById("worst").innerHTML = "Critical %"
+                element3.classList.add("green")
+            }       
+            
+        }
+    </script>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+</body>
